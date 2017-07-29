@@ -16,7 +16,7 @@ class Game:
     def getInitialState(self):
         return list([x] for x in range(1, self._max+1))
 
-    # Returns all of the next states I could potentially go to.
+    # Returns all of the next states the agent could potentially go to.
     def getNextStates(self, state):
         self._cache[self.getCacheKey(state)] = True
         currentNo = state[-1]
